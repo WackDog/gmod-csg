@@ -27,15 +27,15 @@ csg/
 │   │   ├── sh_config.lua
 │   │   ├── sv_cameras.lua
 │   │   └── cl_viewer.lua
-├── entities/
-│   ├── ent_csg_camera/
-│   │   ├── shared.lua
-│   │   ├── init.lua
-│   │   └── cl_init.lua
-│   └── ent_csg_terminal/
-│       ├── shared.lua
-│       ├── init.lua
-│       └── cl_init.lua
+│   ├── entities/
+│       ├── ent_csg_camera/
+│       │   ├── shared.lua
+│       │   ├── init.lua
+│       │   └── cl_init.lua
+│       └── ent_csg_terminal/
+│           ├── shared.lua
+│           ├── init.lua
+│           └── cl_init.lua
 ├── data/
 │   └── csg/
 │       ├── cameras.json
