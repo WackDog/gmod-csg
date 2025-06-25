@@ -107,10 +107,10 @@ While viewing a camera, press **RMB** or **ESC** to exit.
 Coming soon:
 
 - 🔐 **Clearance Levels**: Restrict certain cameras to senior ranks  
-- 🤖 **Motion Detection**: Auto-ping on detected movement  
+- 🤖 **Motion Detection**: Auto-ping on detected movement ✅
 - 🗂️ **Sector Tags**: Assign sectors to cameras for filtering  
 - 🗃️ **MySQL Backend**: Cross-server persistence option  
-- 🔊 **Audio/SFX**: Combine beeps, alerts, and scanline effects  
+- 🔊 **Audio/SFX**: Combine beeps, alerts, and scanline effects ✅
 
 ---
 
