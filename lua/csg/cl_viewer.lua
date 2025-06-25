@@ -190,3 +190,25 @@ net.Receive("CSG_ConfirmRenameCamera", function()
     local newLabel = net.ReadString()
     chat.AddText(Color(100, 255, 100), "[CSG] Camera #" .. id .. " renamed to: " .. newLabel)
 end)
+
+-- Play beep and trigger screen flash when ping arrives
+net.Receive("CSG_PingFX", function()
+    local id, label = net.ReadUInt(16), net.ReadString()
+
+    -- Play Combine alert beep
+    surface.PlaySound("buttons/button17.wav")
+
+    -- Flash the screen
+    hook.Add("HUDPaint", "CSG_PingFlash", function()
+        surface.SetDrawColor(255, 60, 60, 80)
+        surface.DrawRect(0, 0, ScrW(), ScrH())
+    end)
+
+    -- Remove flash after 0.2 seconds
+    timer.Simple(0.2, function()
+        hook.Remove("HUDPaint", "CSG_PingFlash")
+    end)
+
+    chat.AddText(Color(255, 180, 0), "[CSG] Camera #" .. id .. " (“" .. label .. "”) pinged!")
+end)
+

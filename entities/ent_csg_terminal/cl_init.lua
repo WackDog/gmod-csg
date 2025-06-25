@@ -5,6 +5,4 @@ include("shared.lua")
 
 function ENT:Draw()
     self:DrawModel()
-
-    -- Optional: Draw a hologram or label here using 3D2D
 end

@@ -87,6 +87,11 @@ net.Receive("CSG_PingCamera", function(_, ply)
 
     file.CreateDir("csg/logs")
     file.Append("csg/logs/camera_pings.txt", logLine)
+
+    net.Start("CSG_PingFX")
+    net.WriteUInt(id, 16)
+    net.WriteString(label)
+    net.Broadcast()
 end)
 
 -- Initial load

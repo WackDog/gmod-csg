@@ -10,5 +10,5 @@ ENT.Category = "Combine Surveillance"
 ENT.Spawnable = true
 ENT.AdminSpawnable = true
 
--- Unique identifier for internal reference (optional)
+-- Unique identifier for internal reference
 ENT.CSG_Camera = true
